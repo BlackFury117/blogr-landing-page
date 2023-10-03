@@ -2,3 +2,115 @@
 @use 'globals/mixins' as *;
 @use 'globals/reset';
 @use 'globals/typography';
+
+                /// HEADER SECTION ///
+
+header{
+    background: rgb(255,143,113);
+    background: linear-gradient(90deg, rgba(255,143,113,1) 0%, rgba(255,62,85,1) 100%);
+
+    /// NAVBAR SECTION
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 4rem;
+    }
+
+    .first-nav{
+        display: flex;
+        align-items: center;
+
+        img{
+            margin-right: 2.5rem;
+        }
+
+        .dropdown-links{
+            .dropdown-link{
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                margin-right: 2rem;
+
+                &:hover {
+                    .fa-chevron-down {
+                        color: #ffffffab;
+                        transform: rotate(180deg);
+                    }
+
+                    .links{
+                        color: #ffffffab;
+                        text-decoration: underline;
+                    }
+
+                    .dropdown-content{
+                        display: block;
+                    }
+                }
+
+                .links{
+                    color: #fff;
+                    // display: flex;
+                    // align-items: center;
+                    transition: color .35s;
+                }
+
+                .fa-chevron-down{
+                    font-size: .8rem;
+                    color: #fff;
+                    margin-left: .2rem; 
+                    transition: transform .35s;
+                    transform-origin: center;
+                }
+
+                .dropdown-content{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #fff;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    min-width: 150px;
+                    margin-top: .1rem;
+                    padding: 10px;
+                    border-radius: 4px;
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        
+                        color: #909090;
+                        padding: 8px 0;
+                        transition: background-color 0.2s;
+
+                        &:hover{
+                            color: #2D2E40;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .second-nav{
+        .links-2{
+            color: #fff;
+            margin-left: 2rem;
+        }
+
+        .btn-nav{
+            background-color: #fff;
+            color: #FF505C;
+            padding: .8rem 2rem;
+            border-radius: 1.75rem;
+
+            &:hover{
+                background-color: #FF7B86;
+                color: #fff;
+                transition: .25s ease-out;
+            }
+        }
+    }
+}

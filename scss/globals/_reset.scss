@@ -1,0 +1,15 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
