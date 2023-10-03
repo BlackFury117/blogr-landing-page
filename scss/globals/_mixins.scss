@@ -4,3 +4,8 @@
     display: flex;
     align-items: center;
 }
+
+@mixin flex-setup-2{
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
