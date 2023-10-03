@@ -7,7 +7,9 @@
 
 header{
     background: rgb(255,143,113);
-    background: linear-gradient(90deg, rgba(255,143,113,1) 0%, rgba(255,62,85,1) 100%);
+    background: url(/images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, rgba(255,143,113,1) 0%, rgba(255,62,85,1) 100%);
+    background-position: center;
+    border-radius: 0rem 0rem 0rem 6.25rem;
 
     /// NAVBAR SECTION
     .navbar-container{
@@ -101,12 +103,12 @@ header{
     
             .btn-nav{
                 background-color: #fff;
-                color: #FF505C;
+                color: $btn-color;
                 padding: .8rem 2rem;
                 border-radius: 1.75rem;
     
                 &:hover{
-                    background-color: #FF7B86;
+                    background-color: $btn-bg-color;
                     color: #fff;
                     transition: .25s ease-out;
                 }
@@ -116,6 +118,50 @@ header{
 
     /// HERO SECTION
     .hero-section{
-        
+        text-align: center;
+        padding: 5rem 0 8rem 0;
+
+        .hero-text{
+            h1{
+                font-size: 4rem;
+                letter-spacing: -0.12rem;
+                color: #FFF;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 1.25rem;
+                color: #FFF;
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        .hero-btn{
+            .hero-btn-1{
+                background-color: #FFF;
+                color: $btn-color;
+                padding: .8rem 1.5rem;
+                border-radius: 1.75rem;
+                margin-right: 1rem;
+
+                &:hover{
+                    background-color: $btn-bg-color;
+                    color: #FFF;
+                }
+            }
+
+            .hero-btn-2{
+                @extend .hero-btn-1;
+                background-color: transparent;
+                border: 1px solid #FFF;
+                color: #FFF;
+                margin-right: 0;
+
+                &:hover{
+                    background-color: #FFF;
+                    color: $btn-color;
+                }
+            }
+        }
     }
 }
