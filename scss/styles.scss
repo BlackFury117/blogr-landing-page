@@ -14,14 +14,12 @@ header{
 
     /// NAVBAR SECTION
     .navbar-container{
-        display: flex;
+        @include flex-setup;
         justify-content: space-between;
-        align-items: center;
         padding: 3rem 4rem;
 
         .first-nav{
-            display: flex;
-            align-items: center;
+            @include flex-setup;
     
             img{
                 margin-right: 2.5rem;
@@ -177,9 +175,9 @@ main{
         letter-spacing: -0.075rem;
     }
 
+    /// FIRST SECTION
     .first-section{
-        display: flex;
-        align-items: center;
+        @include flex-setup;
         padding: 0 4rem;
         margin-bottom: 2rem;
         overflow: hidden;
@@ -214,5 +212,10 @@ main{
                 right: -30px;
             }
         }
+    }
+
+    /// SECOND SECTION
+    .second-section{
+        
     }
 }
