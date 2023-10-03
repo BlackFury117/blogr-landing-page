@@ -166,3 +166,53 @@ header{
         }
     }
 }
+
+                /// MAIN SECTION ///
+
+main{
+    h2{
+        font-size: 2.5rem;
+        color: $main-color;
+        text-align: center;
+        letter-spacing: -0.075rem;
+    }
+
+    .first-section{
+        display: flex;
+        align-items: center;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+
+        .text{
+            flex-basis: 50%;
+            flex-shrink: 0;
+
+            h3{
+                font-size: 1.75rem;
+                color: $main-color;
+                line-height: 1.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p{
+                color: #4C5862;
+                line-height: 1.75rem;
+                letter-spacing: 0.03125rem;
+                margin-bottom: 4rem;
+                padding-right: 2rem;
+            }
+        }
+
+        .img{
+            @extend .text;
+
+            img{
+                width: 55rem;
+                height: 55.125rem;
+                position: relative;
+                right: -30px;
+            }
+        }
+    }
+}
