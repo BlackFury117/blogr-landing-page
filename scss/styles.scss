@@ -384,6 +384,24 @@ main{
         .third-section{
             flex-direction: column;
             padding: 0 1.5rem;
+
+            .img-third{
+                .mob-img{
+                    display: block;
+                    object-fit: contain;
+                    width: 100%;
+                    left: 0;
+                    margin-bottom: 1.5rem;
+                }
+
+                img{
+                    display: none;
+                }
+            }
+
+            .text-third{
+                text-align: center;
+            }
         }
     }
 }
