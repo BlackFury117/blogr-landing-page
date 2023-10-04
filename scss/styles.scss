@@ -238,6 +238,10 @@ main{
         .img{
             @extend .text;
 
+            .mob{
+                display: none;
+            }
+
             img{
                 width: 55rem;
                 height: 55.125rem;
@@ -320,7 +324,40 @@ main{
     }
 }
 
-                /// HEADER SECTION ///
+@include mobile-view{
+    main{
+        h2{
+            font-size: 1.75rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .first-section{
+            flex-direction: column-reverse;
+            padding: 0 1.5rem;
+
+            .text{
+                text-align: center;
+            }
+
+            .img{
+                flex-basis: 100%;
+                .mob{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    right: 0;
+                    margin-bottom: 2rem;
+                }
+
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+                /// FOOTER SECTION ///
 
 footer{
     display: flex;
