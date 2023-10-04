@@ -341,6 +341,7 @@ main{
 
             .img{
                 flex-basis: 100%;
+
                 .mob{
                     display: block;
                     width: 100%;
@@ -352,6 +353,27 @@ main{
                 img{
                     display: none;
                 }
+            }
+        }
+
+        .second-section{
+            flex-direction: column;
+            background-position: center;
+            height: auto;
+            padding: 0 1.5rem;
+            margin-top: 2.5rem;
+
+            .img-second{
+                img{
+                    width: 100%;
+                    position: relative;
+                    top: -50px;
+                }
+            }
+
+            .text-second{
+                text-align: center;
+                padding-bottom: 4rem;
             }
         }
     }
