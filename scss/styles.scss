@@ -296,6 +296,10 @@ main{
             @include flex-setup-2;
             position: relative;
 
+            .mob-img{
+                display: none;
+            }
+
             img{
                 width: calc(100% + 310px);
                 height: auto;
@@ -375,6 +379,11 @@ main{
                 text-align: center;
                 padding-bottom: 4rem;
             }
+        }
+
+        .third-section{
+            flex-direction: column;
+            padding: 0 1.5rem;
         }
     }
 }
