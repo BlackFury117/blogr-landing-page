@@ -440,3 +440,26 @@ footer{
         }
     }
 }
+
+@include mobile-view{
+    footer{
+        flex-direction: column;
+        padding: 4rem 1.5rem;
+        text-align: center;
+
+        .logo-footer{
+            margin-bottom: 2rem;
+        }
+
+        .footer-link{
+            margin-bottom: 3rem;
+            .header-footer{
+                margin-bottom: .5rem;
+            }
+        }
+
+        .footer-link-2{
+            margin-bottom: 0;
+        }
+    }
+}
