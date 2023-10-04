@@ -9,3 +9,9 @@
     flex-basis: 50%;
     flex-shrink: 0;
 }
+
+@mixin mobile-view{
+    @media only screen and (max-width: 600px){
+      @content;
+    }
+}
