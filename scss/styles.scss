@@ -176,6 +176,9 @@ header{
             padding: 3rem 1.5rem;
 
             .first-nav{
+                img{
+                    width: 5.125rem;
+                }
                 .dropdown-links{
                     display: none;
                 }
@@ -183,6 +186,14 @@ header{
 
             .second-nav{
                 display: none;
+            }
+        }
+
+        .hero-section{
+            .hero-text{
+                h1{
+                    font-size: 2.25rem;
+                }
             }
         }
     }
