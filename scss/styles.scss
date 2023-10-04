@@ -251,6 +251,7 @@ main{
     .third-section{
         @include flex-setup;
         padding: 0 4rem;
+        margin-bottom: 5rem;
         overflow: hidden;
 
         .img-third{
