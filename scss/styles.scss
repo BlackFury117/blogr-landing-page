@@ -146,6 +146,7 @@ header{
                 &:hover{
                     background-color: $btn-bg-color;
                     color: #FFF;
+                    transition: .25s ease-out;
                 }
             }
 
@@ -159,6 +160,7 @@ header{
                 &:hover{
                     background-color: #FFF;
                     color: $btn-color;
+                    transition: .25s ease-out;
                 }
             }
         }
@@ -283,6 +285,41 @@ main{
                 line-height: 1.75rem;
                 letter-spacing: 0.03125rem;
                 margin-bottom: 3.5rem;
+            }
+        }
+    }
+}
+
+                /// HEADER SECTION ///
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0rem 6.25rem 0rem 0rem;
+    background: #24242C;
+    padding: 4rem 10rem 4rem 4rem;
+
+    .footer-link{
+
+        .header-footer{
+            color: #FFF;
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 2.0625rem;
+            margin-bottom: 2rem;
+        }
+
+        .link-footer{
+            a{
+                color: #FFF;
+                font-size: 0.9375rem;
+                line-height: 2.0625rem;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: #dcdbdbb1;
+                    transition: .25s ease-out;
+                }
             }
         }
     }
