@@ -8,7 +8,7 @@ $(document).on("click", function(event){
   // Prevent the dropdown from closing when clicking inside it
   $(".dropdown-link").on("click", function(event){
     event.stopPropagation();
-});
+  });
 
 
 // MOBILE NAVIGATION //
