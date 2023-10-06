@@ -2,7 +2,7 @@
 
 ![Design preview for the Blogr landing page coding challenge](./design/screenshot-of-my-work.jpg) <br>
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](). Frontend Mentor challenges help us to improve our coding skills by building realistic projects. <br><br>
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/blogr-landing-page-solution-cwNjxsoX9C). Frontend Mentor challenges help us to improve our coding skills by building realistic projects. <br><br>
 
 ## Built with
 
@@ -12,7 +12,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](). F
 - Javascript
 - Mobile-first workflow
 
-Preview it here - [Blogr landing page]() <br><br>
+Preview it here - [Blogr landing page](https://blogrlandingpage1.netlify.app/) <br><br>
 
 ## Author
 
