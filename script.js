@@ -1,33 +1,45 @@
-// Close the dropdown when clicking outside of it
-$(document).on("click", function(event){
-    if (!$(event.target).closest(".dropdown-link").length) {
-      $(".dropdown-content").hide();
-    }
-  });
-  
-  // Prevent the dropdown from closing when clicking inside it
-  $(".dropdown-link").on("click", function(event){
-    event.stopPropagation();
-  });
-
-
 // MOBILE NAVIGATION //
 
 document.addEventListener("DOMContentLoaded", function() {
   const hamburgerCheckbox = document.querySelector(".hamburger input");
-  const navLinks = document.querySelector(".dropdown-links");
+  const dropDownLinks = document.querySelector(".dropdown-links");
 
   hamburgerCheckbox.addEventListener("change", function() {
     if (this.checked) {
-      navLinks.style.display = "inline-flex";
+      dropDownLinks.style.display = "flex";
+      dropDownLinks.style.flexDirection = "column";
       document.body.style.overflow = "hidden";
-      navLinks.classList.add("show");
+      dropDownLinks.classList.add("show");
     } else {
-      navLinks.style.display = "none";
+      dropDownLinks.style.display = "none";
       document.body.style.overflow = "auto";
-      navLinks.classList.remove("show");
+      dropDownLinks.classList.remove("show");
     }
   });
 });
 
 // END MOBILE NAVIGATION
+
+
+/// CLOSING DROPDOWN MENU ///
+
+function toggleDropdown(link) {
+  var dropdownContent = link.querySelector('.dropdown-content');
+  var chevron = link.querySelector('.fa-chevron-down');
+  dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+  chevron.style.transform = (dropdownContent.style.display === 'block') ? 'rotate(180deg)' : 'rotate(0deg)';
+}
+
+document.addEventListener('click', function (event) {
+  var dropdownLinks = document.querySelectorAll('.dropdown-link');
+  dropdownLinks.forEach(function (link) {
+      var dropdownContent = link.querySelector('.dropdown-content');
+      var chevron = link.querySelector('.fa-chevron-down');
+      if (!link.contains(event.target)) {
+          dropdownContent.style.display = 'none';
+          chevron.style.transform = 'rotate(0deg)';
+      }
+  });
+});
+
+/// END CLOSING DROPDOWN MENU ///
