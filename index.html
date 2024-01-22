@@ -18,6 +18,8 @@
 
   <!-------- SCSS File -------->
   <link rel="stylesheet" href="./dist/styles.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -95,11 +97,11 @@
 
     <!-------- Hero Section -------->
     <div class="hero-section">
-      <div class="hero-text">
+      <div class="hero-text" data-aos="fade-down" data-aos-duration="1700">
         <h1>A modern publishing platform</h1>
         <p>Grow your audience and build your online brand</p>
       </div>
-      <div class="hero-btn">
+      <div class="hero-btn" data-aos="fade-up" data-aos-duration="1700">
         <a href="#" class="hero-btn-1">Start for Free</a>
         <a href="#" class="hero-btn-2">Learn More</a>
       </div>
@@ -110,11 +112,11 @@
   <!-------------------- MAIN SECTION -------------------->
   <main>
 
-    <h2>Designed for the future</h2>
+    <h2 data-aos="flip-up" data-aos-duration="1700">Designed for the future</h2>
 
     <!-------- First Section -------->
     <section class="first-section">
-      <div class="text">
+      <div class="text" data-aos="fade-right" data-aos-duration="1700">
         <h3>Introducing an extensible editor</h3>
         <p>
           Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -129,7 +131,7 @@
         </p>
       </div>
 
-      <div class="img">
+      <div class="img" data-aos="fade-left" data-aos-duration="1700">
         <img src="./images/illustration-editor-desktop.svg" alt="This an illustration">
         <img class="mob" src="./images/illustration-editor-mobile.svg" alt="This an illustration">
       </div>
@@ -137,11 +139,11 @@
 
     <!-------- Second Section -------->
     <section class="second-section">
-      <div class="img-second">
+      <div class="img-second" data-aos="flip-up" data-aos-duration="1700">
         <img src="./images/illustration-phones.svg" alt="This is a phone">
       </div>
 
-      <div class="text-second">
+      <div class="text-second" data-aos="flip-down" data-aos-duration="1700">
         <h3>State of the Art Infrastructure</h3>
         <p>
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
@@ -152,13 +154,13 @@
 
     <!-------- Third Section -------->
     <section class="third-section">
-      <div class="img-third">
+      <div class="img-third" data-aos="fade-up-right" data-aos-duration="1700">
         <img src="./images/illustration-laptop-desktop.svg" alt="This is a laptop">
         <img class="mob-img" src="./images/illustration-laptop-mobile.svg" alt="This is a laptop">
 
       </div>
 
-      <div class="text-third">
+      <div class="text-third" data-aos="fade-up-left" data-aos-duration="1700">
         <h3>Free, open, simple</h3>
         <p>
           Blogr is a free and open source application backed by a large community of helpful developers. It supports 
@@ -177,11 +179,11 @@
   </main>
 
   <footer>
-    <div class="logo-footer">
+    <div class="logo-footer" data-aos="fade-right" data-aos-duration="1500">
       <img src="./images/logo.svg" alt="This is the footer logo">
     </div>
 
-    <div class="footer-link">
+    <div class="footer-link" data-aos="fade-up" data-aos-duration="1500">
       <div class="header-footer">Product</div>
       <div class="link-footer">
         <a href="#">Overview</a>
@@ -200,7 +202,7 @@
       </div>
     </div>
 
-    <div class="footer-link">
+    <div class="footer-link" data-aos="fade-down" data-aos-duration="1500">
       <div class="header-footer">Company</div>
       <div class="link-footer">
         <a href="#">About</a>
@@ -216,7 +218,7 @@
       </div>
     </div>
 
-    <div class="footer-link footer-link-2">
+    <div class="footer-link footer-link-2" data-aos="fade-up" data-aos-duration="1500">
       <div class="header-footer">Connect</div>
       <div class="link-footer">
         <a href="#">Contact</a>
@@ -236,5 +238,9 @@
   </div> -->
 
   <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
